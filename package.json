@@ -5,7 +5,7 @@
   "main": "./dist/Drawer.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/the-unsullied/react-fancy"
+    "url": "https://github.com/the-unsullied/react-drawer"
   },
   "scripts": {
     "build": "rm -rf dist && mkdir -p dist && babel src/Drawer.jsx --out-file dist/Drawer.js && node ./scripts/build-dist && cp src/main.scss dist/Drawer.scss",
