@@ -1,6 +1,6 @@
-# react-fancy-field
+# react-drawer
 
-*A modern styled input field with animating effects built for React. Has built in validation effects.*
+*A toggle drawer to hide/show other content built for React.*
 
 ## Install
 ```
@@ -32,7 +32,7 @@ npm install unsullied-react-drawer --save
 
 **isOpen** {Boolean} initial state of drawer. Can set this to open programatically.
 
-**header** {String} What appears in header of drawer.
+**header** {Any} What appears in header of drawer.
 
 
 

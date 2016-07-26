@@ -26,7 +26,7 @@ export default React.createClass({
 
   propTypes: {
     isOpen: React.PropTypes.bool,
-    header: React.PropTypes.string
+    header: React.PropTypes.any
   },
 
   componentDidMount() {
@@ -113,7 +113,7 @@ export default React.createClass({
       {this.renderStyle()}
       <div ref="drawerHeader" className='drawer__header'
            onClick={this.toggleDrawer}>
-        <h2>{this.props.header}</h2>
+        { this.props.header }
         <i className={classnames({'unsullied-icon-chevron-up': isOpen, 'unsullied-icon-chevron-down': !isOpen})}></i>
       </div>
       <div className='drawer__body' id={id} ref="drawer">

@@ -1,6 +1,6 @@
 {
   "name": "unsullied-react-drawer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A toggle drawer to hide/show other content built for React.",
   "main": "./dist/Drawer.js",
   "repository": {
