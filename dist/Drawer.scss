@@ -1,0 +1,63 @@
+$drawerPadding: 15px;
+$drawerBorderColor: #999;
+$drawerHeaderColor: #ddd;
+
+@mixin drawer-no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin drawer-vendor($prop, $val) {
+  -webkit-#{$prop}: #{$val};
+  -ms-#{$prop}: #{$val};
+  -moz-#{$prop}: #{$val};
+  -o-#{$prop}: #{$val};
+  #{$prop}: #{$val};
+}
+
+.drawer {
+  border: 1px solid $drawerBorderColor;
+}
+
+.drawer__header {
+  cursor: pointer;
+  padding: 0 $drawerPadding;
+  @include drawer-no-select();
+}
+
+.drawer__header--open {
+  border-bottom: 1px solid $drawerBorderColor;
+}
+
+.drawer__header h2,
+.drawer__header i {
+  display: inline-block;
+}
+
+.drawer__header h2 {
+  width: 95%;
+}
+.drawer__header i {
+  width: 5%;
+  font-size: 25px;
+  color: $drawerHeaderColor;
+}
+
+.drawer__body {
+  height: 0;
+  @include drawer-vendor(transition, height 500ms ease);
+  overflow: hidden;
+}
+
+.drawer__body-content {
+  padding: $drawerPadding;
+}
+
+.drawer__body--after-open {
+  overflow: visible;
+  height: auto !important;
+}
