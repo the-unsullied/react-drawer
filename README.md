@@ -54,3 +54,9 @@ To get drawers to have icons, you will need the following classes defined with c
   height: 25px;
 }
 ```
+
+To edit the color of the icons, you can edit the svg directly by adding a fill property of the color of your choice:
+
+```
+ <path d="M16.585 8.585l-4.585 4.585-4.585-4.585-1.415 1.415 6 6 6-6z" fill='#999999'></path>
+```
