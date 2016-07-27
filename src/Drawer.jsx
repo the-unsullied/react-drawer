@@ -113,8 +113,10 @@ export default React.createClass({
       {this.renderStyle()}
       <div ref="drawerHeader" className='drawer__header'
            onClick={this.toggleDrawer}>
-        { this.props.header }
-        <i className={classnames({'unsullied-icon-chevron-up': isOpen, 'unsullied-icon-chevron-down': !isOpen})}></i>
+        <div className='drawer__header__content'>
+          { this.props.header }
+        </div>
+        <i className={classnames('drawer__header__icon', {'unsullied-icon-chevron-up': isOpen, 'unsullied-icon-chevron-down': !isOpen})}></i>
       </div>
       <div className='drawer__body' id={id} ref="drawer">
         <div className="drawer__body-content">

@@ -148,8 +148,12 @@ exports.default = _react2.default.createClass({
         'div',
         { ref: 'drawerHeader', className: 'drawer__header',
           onClick: this.toggleDrawer },
-        this.props.header,
-        _react2.default.createElement('i', { className: (0, _classnames2.default)({ 'unsullied-icon-chevron-up': isOpen, 'unsullied-icon-chevron-down': !isOpen }) })
+        _react2.default.createElement(
+          'div',
+          { className: 'drawer__header__content' },
+          this.props.header
+        ),
+        _react2.default.createElement('i', { className: (0, _classnames2.default)('drawer__header__icon', { 'unsullied-icon-chevron-up': isOpen, 'unsullied-icon-chevron-down': !isOpen }) })
       ),
       _react2.default.createElement(
         'div',

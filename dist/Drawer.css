@@ -9,20 +9,20 @@
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  position: relative; }
+
+.drawer__header__content {
+  width: 100%; }
 
 .drawer__header--open {
   border-bottom: 1px solid #999; }
 
-.drawer__header h2,
-.drawer__header i {
-  display: inline-block; }
-
-.drawer__header h2 {
-  width: 95%; }
-
-.drawer__header i {
-  width: 5%;
+.drawer__header .drawer__header__icon {
+  position: absolute;
+  top: 35%;
+  right: 2%;
+  width: 20px;
   font-size: 25px;
   color: #ddd; }
 

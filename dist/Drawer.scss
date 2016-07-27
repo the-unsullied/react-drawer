@@ -1,6 +1,6 @@
-$drawerPadding: 15px;
-$drawerBorderColor: #999;
-$drawerHeaderColor: #ddd;
+$drawerPadding: 15px !default;
+$drawerBorderColor: #999 !default;
+$drawerHeaderColor: #ddd !default;
 
 @mixin drawer-no-select {
   -webkit-touch-callout: none;
@@ -27,22 +27,22 @@ $drawerHeaderColor: #ddd;
   cursor: pointer;
   padding: 0 $drawerPadding;
   @include drawer-no-select();
+  position: relative;
+}
+
+.drawer__header__content {
+  width: 100%;
 }
 
 .drawer__header--open {
   border-bottom: 1px solid $drawerBorderColor;
 }
 
-.drawer__header h2,
-.drawer__header i {
-  display: inline-block;
-}
-
-.drawer__header h2 {
-  width: 95%;
-}
-.drawer__header i {
-  width: 5%;
+.drawer__header .drawer__header__icon {
+  position: absolute;
+  top: 35%;
+  right: 2%;
+  width: 20px;
   font-size: 25px;
   color: $drawerHeaderColor;
 }
