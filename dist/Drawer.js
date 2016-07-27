@@ -72,7 +72,7 @@ exports.default = _react2.default.createClass({
     var drawer = this.refs.drawer;
 
     var _cssText = drawer.style.cssText;
-    drawer.style.cssText = 'visibility: hidden; position: absolute; height: auto';
+    drawer.style.cssText = 'visibility: hidden; position: absolute; height: auto; width: 100%;';
     var height = drawer.offsetHeight + 'px';
     drawer.style.cssText = _cssText;
     return height;

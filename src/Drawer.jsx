@@ -59,7 +59,7 @@ export default React.createClass({
   getHeight() {
     const { drawer } = this.refs;
     const _cssText = drawer.style.cssText;
-    drawer.style.cssText = 'visibility: hidden; position: absolute; height: auto';
+    drawer.style.cssText = 'visibility: hidden; position: absolute; height: auto; width: 100%;';
     const height = `${drawer.offsetHeight}px`;
     drawer.style.cssText = _cssText;
     return height;
